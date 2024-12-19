@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW Create a Job</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>NEW Create a job</h1>
+      <span class="close-btn">&times;</span>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="modal-content">
+      <!-- Client Details -->
+      <div class="section">
+        <h2>Client details</h2>
+        <div class="inline-inputs">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+      </div>
+        <input type="text" placeholder="(233) 333-4455" />
+        <input type="email" placeholder="test@test.test" />
+      </div>
+
+      <!-- Job Type -->
+      <div class="section">
+        <h2>Job type</h2>
+        <select>
+        <option> Select job title </option>
+        <option>Recall Job</option>
+        </select>
+        <select>
+          <option>GL Pinellas</option>
+        </select>
+        <textarea placeholder="Job description"></textarea>
+      </div>
+
+      <!-- Service Location -->
+      <div class="section">
+        <h2>Service location</h2>
+        <input type="text" placeholder="Address" />
+        <input type="text" placeholder="City" />
+        <input type="text" placeholder="State" />
+        <div class="inline-inputs">
+          <input type="text" placeholder="10038" />
+          <select>
+            <option>Tampa</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Scheduled -->
+      <div class="section">
+        <h2>Scheduled</h2>
+        <input type="date" placeholder="Start date" lang="fr-CA"/>
+        <div class="inline-inputs">
+        <select>
+            <option value="start-date">08:00</option>
+            <option value="end-date">10:00</option>
+            <option value="end-date">12:00</option>
+            <option value="end-date">15:00</option>
+        </select>
+        <select>
+            <option value="start-date">08:00</option>
+            <option value="end-date">10:00</option>
+            <option value="end-date">12:00</option>
+            <option value="end-date">15:00</option>
+        </select>
+        </div>
+        <select>
+          <option>Select technician</option>
+          <option>Timur Yusupov</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="modal-footer">
+      <button class="yellow-btn">Create job</button>
+      <button class="gray-btn">Save info</button>
+    </div>
+  </div>
+</body>
+</html>

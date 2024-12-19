@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Modal Container */
+  .modal {
+    background: #f3f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    padding: 20px;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .modal-header h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .close-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+  }
+
+  .modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Sections with 3D Shadow */
+  .section {
+    background: #fbfbfb;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #e9e8e8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added 3D depth */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Interactive shadow */
+  }
+
+  .section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    resize: none;
+    height: 60px;
+  }
+
+  .inline-inputs {
+    display: flex;
+    gap: 10px;
+  }
+
+  .inline-inputs input,
+  .inline-inputs select {
+    flex: 1;
+  }
+
+  input.error {
+    border-color: red;
+  }
+
+  /* Modal Footer */
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  button:hover {
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.20); /* Interactive shadow */
+  }
+
+  .yellow-btn {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .gray-btn {
+    background-color: #ddd;
+    color: #333;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
